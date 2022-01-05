@@ -20,6 +20,7 @@ const handleSubmit = (e) => {
                 value={searchValue}
                 placeholder='Movie Name...'
                 onChange={handleOnChange}
+                autoFocus
             />
             <button onClick={handleSubmit}>Search</button>
 

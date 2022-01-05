@@ -62,7 +62,6 @@ function App() {
   }, [])
 
   const search = (searchValue) => {
-    console.log(searchValue);
     dispatch({
       type: "SEARCH_MOVIES_REQUEST"
     })
@@ -71,7 +70,6 @@ function App() {
     .then(response => response.json())
     .then(jsonResponse =>{
       if(jsonResponse.Response === 'True') {
-        console.log(jsonResponse);
         dispatch({
           type: "SEARCH_MOVIE_SUCCESS",
           payload: jsonResponse.Search

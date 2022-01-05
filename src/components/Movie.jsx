@@ -6,7 +6,6 @@ const DEFAULT_PLACEHOLDER_IMG = "https://m.media-amazon.com/images/M/MV5BMTczNTI
 
 function Movie({movie}) {
     const poster = movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMG : movie.Poster;
-    console.log(movie);
 
     return (
         <div className='movie'>
